@@ -6,19 +6,21 @@ import "./App.css";
 import ProductModule from "./components/ProductModule";
 import { nanoid } from "nanoid";
 import ItemImg from "./assets/images/img-item.jpg";
+import Container from "./components/Common/Container";
+import ScrollButton from "./components/Common/ScrollButton";
 
 function App() {
   return (
     <div>
       <Header />
       <Banner />
-      <div className="product__container">
-        <ProductModule type={1}/>
-        <ProductModule type={2}/>
+      <Container>
+      <ProductModule type={1}/>
         <ProductModule type={3}/>
-      </div>
-
+        <ProductModule type={2}/>
+      </Container>
       <Footer />
+      <ScrollButton/>
     </div>
   );
 }

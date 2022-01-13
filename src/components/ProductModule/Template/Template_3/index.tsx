@@ -1,6 +1,7 @@
 import React from 'react'
+import Card from '../../../Card'
 import { ProductTemplateWrapper } from '../Template_3/style'
-import ImageItem from '../../../../assets/images/img-item.jpg';
+
 
 const ProductTemplate3 = () => {
     return (
@@ -22,22 +23,11 @@ const ProductTemplate3 = () => {
         </div>
       </div>
       <div className="product--list-image">
-        <div className="product--image-item">
-          <img src={ImageItem} />
-          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ducimus inventore in fugiat provident voluptas molestiae odio, ad repudiandae explicabo reiciendis aliquam error animi cumque! Ullam facilis voluptas voluptatem sit.</div>
-        </div>
-        <div className="product--image-item">
-          <img src={ImageItem} />
-          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ducimus inventore in fugiat provident voluptas molestiae odio, ad repudiandae explicabo reiciendis aliquam error animi cumque! Ullam facilis voluptas voluptatem sit.</div>
-        </div>
-        <div className="product--image-item">
-          <img src={ImageItem} />
-          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ducimus inventore in fugiat provident voluptas molestiae odio, ad repudiandae explicabo reiciendis aliquam error animi cumque! Ullam facilis voluptas voluptatem sit.</div>
-        </div>
-        <div className="product--image-item">
-          <img src={ImageItem} />
-          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ducimus inventore in fugiat provident voluptas molestiae odio, ad repudiandae explicabo reiciendis aliquam error animi cumque! Ullam facilis voluptas voluptatem sit.</div>
-        </div>
+       <Card numberOfColumn={4}/>
+       <Card numberOfColumn={4}/>
+       <Card numberOfColumn={4}/>
+       <Card numberOfColumn={4}/>
+
       </div>
         </ProductTemplateWrapper>
     )

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ProductTemplateWrapper =styled.div`
    width:100%;
    margin-top:3.75rem;
+   margin-bottom:5.5625rem;
    .product--content{
        display:flex;
        flex-direction:row;
